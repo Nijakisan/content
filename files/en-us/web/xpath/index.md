@@ -1,31 +1,9 @@
 ---
 title: XPath
 slug: Web/XPath
-tags:
-  - CSS Selectors
-  - DOM
-  - Landing
-  - Path
-  - XML
-  - XPath
-  - XSLT
+page-type: landing-page
+sidebar: xsltsidebar
 ---
-
-<section id="Quick_links">
-  <ol>
-    <li><strong><a href="/en-US/docs/Web/XSLT">XSLT</a></strong></li><li><strong><a href="/en-US/docs/Web/EXSLT">EXSLT</a></strong></li>
-    <li><strong><a href="/en-US/docs/Web/XPath">XPath</a></strong></li>
-    <li class="toggle"><details open><summary>Guides</summary>
-      <ol>
-        <li><a href="/en-US/docs/Web/XPath/Comparison_with_CSS_selectors">Comparison of CSS Selectors and XPath</a></li>
-        <li><a href="/en-US/docs/Web/XPath/Introduction_to_using_XPath_in_JavaScript">Introduction to using XPath in JavaScript</a></li>
-        <li><a href="/en-US/docs/Web/XPath/Snippets">XPath snippets</a></li>
-      </ol></details>
-    </li>
-    <li class="toggle"><details open><summary><a href="/en-US/docs/Web/XPath/Axes">XPath Axes</a></summary>{{ListSubpagesForSidebar("/en-US/docs/Web/XPath/Axes")}}</details></li>
-    <li class="toggle"><details open><summary><a href="/en-US/docs/Web/XPath/Functions">XPath Functions</a></summary>{{ListSubpagesForSidebar("/en-US/docs/Web/XPath/Functions")}}</details></li>
-  </ol>
-</section>
 
 XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an [XML](/en-US/docs/Web/XML/XML_introduction) document. It can also be used to test addressed nodes within a document to determine whether they match a pattern or not.
 
@@ -33,7 +11,8 @@ XPath is mainly used in [XSLT](/en-US/docs/Web/XSLT), but can also be used as a 
 
 XPath uses a path notation (as in URLs) for navigating through the hierarchical structure of an XML document. It uses a non-XML syntax so that it can be used in URIs and XML attribute values.
 
-> **Note:** Support for XPath varies widely; it's supported reasonably well in Firefox (although there are no plans to improve support further), while other browsers implement it to a lesser extent, if at all. If you need a polyfill, you may consider [js-xpath](https://sourceforge.net/projects/js-xpath/files/js-xpath/1.0.0/xpath.js/download) or [wicked-good-xpath](https://github.com/google/wicked-good-xpath).
+> [!NOTE]
+> Support for XPath varies widely; it's supported reasonably well in Firefox (although there are no plans to improve support further), while other browsers implement it to a lesser extent, if at all. If you need a polyfill, you may consider [js-xpath](https://pilotfiber.dl.sourceforge.net/project/js-xpath/js-xpath/1.0.0/xpath.js) or [wicked-good-xpath](https://github.com/google/wicked-good-xpath).
 
 ## Documentation
 
@@ -43,7 +22,7 @@ XPath uses a path notation (as in URLs) for navigating through the hierarchical 
   - : List and definition of the axes defined in the XPath specification. Axes are used to describe the relationships between nodes.
 - [XPath:Functions](/en-US/docs/Web/XPath/Functions)
   - : List and description of the core XPath functions and XSLT-specific additions to XPath.
-- [Transforming XML with XSLT](/en-US/docs/Web/XSLT/Transforming_XML_with_XSLT)
+- [Transforming XML with XSLT](/en-US/docs/Web/XSLT/Guides/Transforming_XML_with_XSLT)
   - : XSLT uses XPath to address code segments in an XML document that it wishes to transform.
 - [XPath snippets](/en-US/docs/Web/XPath/Snippets)
   - : These are JavaScript utility functions, that can be used in your own code, based on [DOM Level 3 XPath](https://www.w3.org/TR/DOM-Level-3-XPath/) APIs.

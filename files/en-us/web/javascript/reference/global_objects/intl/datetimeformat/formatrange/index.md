@@ -2,29 +2,17 @@
 title: Intl.DateTimeFormat.prototype.formatRange()
 slug: Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/formatRange
 page-type: javascript-instance-method
-tags:
-  - DateTimeFormat
-  - Internationalization
-  - Intl
-  - JavaScript
-  - Localization
-  - Method
-  - Prototype
-  - Reference
 browser-compat: javascript.builtins.Intl.DateTimeFormat.formatRange
 ---
 
 {{JSRef}}
 
-The **`Intl.DateTimeFormat.prototype.formatRange()`** formats a
-date range in the most concise way based on the **`locale`** and
-**`options`** provided when instantiating
-{{jsxref("Intl.DateTimeFormat")}} object.
+The **`formatRange()`** method of {{jsxref("Intl.DateTimeFormat")}} instances formats a
+date range in the most concise way based on the locales and
+options provided when instantiating this
+`Intl.DateTimeFormat` object.
 
-{{EmbedInteractiveExample("pages/js/intl-datetimeformat-prototype-formatrange.html",
-  "taller")}}
-
-<!-- The source for this interactive example is stored in a GitHub repository. If you'd like to contribute to the interactive examples project, please clone https://github.com/mdn/interactive-examples and send us a pull request. -->
+{{EmbedInteractiveExample("pages/js/intl-datetimeformat-prototype-formatrange.html", "taller")}}
 
 ## Syntax
 
@@ -32,13 +20,26 @@ date range in the most concise way based on the **`locale`** and
 formatRange(startDate, endDate)
 ```
 
+### Parameters
+
+- `startDate`
+  - : The start of the date range. Can be a {{jsxref("Date")}} or {{jsxref("Temporal.PlainDateTime")}} object. Additionally can be a {{jsxref("Temporal.PlainTime")}}, {{jsxref("Temporal.PlainDate")}}, {{jsxref("Temporal.PlainYearMonth")}}, or {{jsxref("Temporal.PlainMonthDay")}} object if the `DateTimeFormat` object was configured to print at least one relevant part of the date.
+    > [!NOTE]
+    > A {{jsxref("Temporal.ZonedDateTime")}} object will always throw a `TypeError`; use {{jsxref("Temporal/ZonedDateTime/toLocaleString", "Temporal.ZonedDateTime.prototype.toLocaleString()")}} or convert it to a {{jsxref("Temporal.PlainDateTime")}} object instead.
+- `endDate`
+  - : The end of the date range. Must have the same type as `startDate`.
+
+### Return value
+
+A string representing the given date range formatted according to the locale and formatting options of this {{jsxref("Intl.DateTimeFormat")}} object.
+
 ## Examples
 
 ### Basic formatRange usage
 
 This method receives two {{jsxref("Date")}}s and formats the date range in the most
 concise way based on the `locale` and `options` provided when
-instantiating {{jsxref("Intl/DateTimeFormat", "Intl.DateTimeFormat")}}.
+instantiating {{jsxref("Intl.DateTimeFormat")}}.
 
 ```js
 const date1 = new Date(Date.UTC(1906, 0, 10, 10, 0, 0)); // Wed, 10 Jan 1906 10:00:00 GMT
