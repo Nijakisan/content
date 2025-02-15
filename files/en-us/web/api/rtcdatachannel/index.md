@@ -2,17 +2,6 @@
 title: RTCDataChannel
 slug: Web/API/RTCDataChannel
 page-type: web-api-interface
-tags:
-  - API
-  - Communication
-  - Data Transfer
-  - Interface
-  - Media
-  - Networking
-  - RTCDataChannel
-  - Reference
-  - WebRTC
-  - WebRTC API
 browser-compat: api.RTCDataChannel
 ---
 
@@ -36,7 +25,7 @@ _Also inherits properties from {{DOMxRef("EventTarget")}}._
     Values are the same as allowed on the {{DOMxRef("WebSocket.binaryType")}} property:
     `blob` if {{DOMxRef("Blob")}} objects are being used,
     or `arraybuffer` if {{jsxref("ArrayBuffer")}} objects are being used.
-    The default is `blob`.
+    The default is `arraybuffer`.
 - {{DOMxRef("RTCDataChannel.bufferedAmount", "bufferedAmount")}} {{ReadOnlyInline}}
   - : Returns the number of bytes of data
     currently queued to be sent over the data channel.
@@ -90,7 +79,7 @@ _Also inherits properties from {{DOMxRef("EventTarget")}}._
 _Also inherits methods from {{DOMxRef("EventTarget")}}._
 
 - {{DOMxRef("RTCDataChannel.close", "close()")}}
-  - : Closes the {{domxref("RTCDataChannel")}}.
+  - : Closes the `RTCDataChannel`.
     Either peer is permitted to call this method
     to initiate closure of the channel.
 - {{DOMxRef("RTCDataChannel.send", "send()")}}

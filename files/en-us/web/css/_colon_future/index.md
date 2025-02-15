@@ -1,5 +1,5 @@
 ---
-title: ":future"
+title: :future
 slug: Web/CSS/:future
 page-type: css-pseudo-class
 browser-compat: css.selectors.future
@@ -50,7 +50,7 @@ The **`:future`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/
 
 ### WebVTT
 
-```
+```plain
 WEBVTT FILE
 
 1

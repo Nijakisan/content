@@ -2,12 +2,6 @@
 title: Array.of()
 slug: Web/JavaScript/Reference/Global_Objects/Array/of
 page-type: javascript-static-method
-tags:
-  - Array
-  - ECMAScript 2015
-  - JavaScript
-  - Method
-  - Polyfill
 browser-compat: javascript.builtins.Array.of
 ---
 
@@ -17,19 +11,28 @@ The **`Array.of()`** static method creates a new `Array`
 instance from a variable number of arguments, regardless of number or type of the
 arguments.
 
-{{EmbedInteractiveExample("pages/js/array-of.html", "shorter")}}
+{{InteractiveExample("JavaScript Demo: Array.of()", "shorter")}}
+
+```js interactive-example
+console.log(Array.of("foo", 2, "bar", true));
+// Expected output: Array ["foo", 2, "bar", true]
+
+console.log(Array.of());
+// Expected output: Array []
+```
 
 ## Syntax
 
 ```js-nolint
-Array.of(element0)
-Array.of(element0, element1)
-Array.of(element0, element1, /* … ,*/ elementN)
+Array.of()
+Array.of(element1)
+Array.of(element1, element2)
+Array.of(element1, element2, /* …, */ elementN)
 ```
 
 ### Parameters
 
-- `elementN`
+- `element1`, …, `elementN`
   - : Elements used to create the array.
 
 ### Return value
@@ -93,8 +96,8 @@ console.log(Array.of.call({}, 1)); // [ 1 ]
 ## See also
 
 - [Polyfill of `Array.of` in `core-js`](https://github.com/zloirock/core-js#ecmascript-array)
-- [`Array()`](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array)
+- [Indexed collections](/en-US/docs/Web/JavaScript/Guide/Indexed_collections) guide
+- {{jsxref("Array")}}
+- {{jsxref("Array/Array", "Array()")}}
 - {{jsxref("Array.from()")}}
 - {{jsxref("TypedArray.of()")}}
-- [`Array.of()` & `Array.from()` proposal](https://gist.github.com/rwaldron/1074126)
-- [`Array.of()` polyfill](https://gist.github.com/rwaldron/3186576)

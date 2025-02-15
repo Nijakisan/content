@@ -2,17 +2,12 @@
 title: CSSNamespaceRule
 slug: Web/API/CSSNamespaceRule
 page-type: web-api-interface
-tags:
-  - API
-  - CSSOM
-  - Interface
-  - Reference
 browser-compat: api.CSSNamespaceRule
 ---
 
 {{APIRef("CSSOM")}}
 
-The **`CSSNamespaceRule`** interface describes an object representing a single CSS {{ cssxref("@namespace") }} [at-rule](/en-US/docs/Web/CSS/At-rule).
+The **`CSSNamespaceRule`** interface describes an object representing a single CSS {{ cssxref("@namespace") }} [at-rule](/en-US/docs/Web/CSS/CSS_syntax/At-rule).
 
 {{InheritanceDiagram}}
 

@@ -2,11 +2,7 @@
 title: lighting-color
 slug: Web/SVG/Attribute/lighting-color
 page-type: svg-attribute
-tags:
-  - SVG
-  - SVG Attribute
-  - SVG Filter
-browser-compat: svg.attributes.presentation.lighting-color
+browser-compat: svg.global_attributes.lighting-color
 ---
 
 {{SVGRef}}
@@ -87,4 +83,5 @@ svg {
 
 ## See also
 
+- CSS {{cssxref("lighting-color")}} property
 - [Description of Phong reflection model on Wikipedia](https://en.wikipedia.org/wiki/Phong_reflection_model)

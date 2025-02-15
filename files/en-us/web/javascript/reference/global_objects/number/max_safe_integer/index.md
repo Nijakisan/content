@@ -2,12 +2,6 @@
 title: Number.MAX_SAFE_INTEGER
 slug: Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER
 page-type: javascript-static-data-property
-tags:
-  - ECMAScript 2015
-  - JavaScript
-  - Number
-  - Property
-  - Polyfill
 browser-compat: javascript.builtins.Number.MAX_SAFE_INTEGER
 ---
 
@@ -17,7 +11,21 @@ The **`Number.MAX_SAFE_INTEGER`** static data property represents the maximum sa
 
 For larger integers, consider using {{jsxref("BigInt")}}.
 
-{{EmbedInteractiveExample("pages/js/number-maxsafeinteger.html")}}
+{{InteractiveExample("JavaScript Demo: Number.MAX_SAFE_INTEGER")}}
+
+```js interactive-example
+const x = Number.MAX_SAFE_INTEGER + 1;
+const y = Number.MAX_SAFE_INTEGER + 2;
+
+console.log(Number.MAX_SAFE_INTEGER);
+// Expected output: 9007199254740991
+
+console.log(x);
+// Expected output: 9007199254740992
+
+console.log(x === y);
+// Expected output: true
+```
 
 ## Value
 
